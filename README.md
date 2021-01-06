@@ -52,7 +52,9 @@ $ npm run dev
 For production environments...
 
 ```sh
-$ coming soon
+$ create file .env.production
+$ set API_HOST = "host name"
+$ yarn run dev / npm run dev
 ```
 
 ### Development
