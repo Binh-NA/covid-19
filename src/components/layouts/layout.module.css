@@ -1,0 +1,9 @@
+.headSticky {
+  position: fixed;
+  z-index: 60;
+  background-color: white;
+}
+
+.bodySticky {
+  margin-top: 105px;
+}
