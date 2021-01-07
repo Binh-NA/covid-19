@@ -9,7 +9,7 @@
     // https://github.com/microsoft/TypeScript/wiki/Performance#skipping-dts-checking
     "skipLibCheck": true,
     // https://github.com/microsoft/TypeScript/wiki/Performance#controlling-types-inclusion
-    "types": [],
+    // "types": [],
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -20,5 +20,11 @@
     "moduleResolution": "node"
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules", 
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+  ]
 }

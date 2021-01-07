@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input renders Empty 1`] = `
+<div
+  className="relative w-full"
+>
+  <input
+    className="w-full px-3 py-1 text-gray-700 border border-gray-300 border-solid rounded outline-none focus:border-purple-700 focus:shadow-lg"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="search"
+    value="aa"
+  />
+  <div />
+</div>
+`;
+
+exports[`Input renders Null 1`] = `
+<div
+  className="relative w-full"
+>
+  <input
+    className="cl-test"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="search"
+    value="aa"
+  />
+  <div
+    className="absolute top-0 right-0"
+  />
+  <div />
+</div>
+`;
+
+exports[`Input renders correctly 1`] = `
+<div
+  className="relative w-full"
+>
+  <input
+    className="w-full px-3 py-1 text-gray-700 border border-gray-300 border-solid rounded outline-none focus:border-purple-700 focus:shadow-lg"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="search"
+    value="aa"
+  />
+  <div />
+</div>
+`;
+
+exports[`Option Search renders Empty 1`] = `
+<div
+  className="relative w-full"
+>
+  <input
+    className="w-full px-3 py-1 text-gray-700 border border-gray-300 border-solid rounded outline-none focus:border-purple-700 focus:shadow-lg"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="search"
+    value="aa"
+  />
+  <div />
+</div>
+`;
+
+exports[`Option Search renders Null 1`] = `
+<div
+  className="relative w-full"
+>
+  <input
+    className="cl-test"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="search"
+    value="aa"
+  />
+  <div
+    className="absolute top-0 right-0"
+  />
+  <div />
+</div>
+`;
+
+exports[`Option Search renders correctly 1`] = `
+<div
+  className="relative w-full"
+>
+  <input
+    className="w-full px-3 py-1 text-gray-700 border border-gray-300 border-solid rounded outline-none focus:border-purple-700 focus:shadow-lg"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="search"
+    value="aa"
+  />
+  <div />
+</div>
+`;
