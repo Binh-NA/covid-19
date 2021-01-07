@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Option Search renders Empty 1`] = `
+<div
+  className="absolute -mt-1 overflow-y-auto bg-white border border-gray-200 border-solid rounded shadow left-1 right-1 max-h-96"
+>
+  <div
+    className="w-full p-4 text-xl text-center text-gray-500"
+  >
+    Empty
+  </div>
+</div>
+`;
+
+exports[`Option Search renders correctly 1`] = `
+<div
+  className="absolute -mt-1 overflow-y-auto bg-white border border-gray-200 border-solid rounded shadow left-1 right-1 max-h-96"
+>
+  <div
+    className="w-full px-3 py-2 text-lg text-left text-gray-600 cursor-pointer hover:bg-gray-200"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    Country
+  </div>
+</div>
+`;

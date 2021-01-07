@@ -57,6 +57,18 @@ $ set API_HOST = "host name"
 $ yarn run dev / npm run dev
 ```
 
+### Test code
+#### npm/npx
+```sh
+$ npm run test
+$ npm run test --coverage
+```
+#### yarn
+```sh
+$ yarn run test
+$ yarn run test --coverage
+```
+
 ### Development
 
 N/A
