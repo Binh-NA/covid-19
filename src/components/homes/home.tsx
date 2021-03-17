@@ -9,9 +9,6 @@ import * as API from "../../constants/api";
 import { createNotification } from "../notification";
 import { Card } from "./card";
 
-const { publicRuntimeConfig } = getConfig();
-console.log(publicRuntimeConfig);
-
 export const HomeComponent = (): JSX.Element => {
   const [loading, setLoading] = useState<boolean>(true);
   const [countries, setCountries] = useState<ICountry[]>([]);
@@ -47,6 +44,10 @@ export const HomeComponent = (): JSX.Element => {
 
   return (
     <div className="relative w-full min-h-screen">
+      <button onClick={() => {
+        const { publicRuntimeConfig } = getConfig();
+        console.log(publicRuntimeConfig);
+      }}>aaaa</button>
       {loading && <Loading.Component />}
       <div className="grid w-full grid-cols-1 gap-8 p-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         {countries.map((item, i) => (
