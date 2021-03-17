@@ -23,6 +23,7 @@ const nextConfig = {
   },
   env: {
     API_HOST: process.env.API_HOST,
+    TEST_KEY: process.env.TEST_KEY,
   },
 }
 

@@ -9,6 +9,9 @@ import { ICountry } from "../../types/apis/country.module";
 import * as API from "../../constants/api";
 import { createNotification } from "../notification";
 import { Card } from "./card";
+import { env } from "process";
+
+const { publicRuntimeConfig } = getConfig();
 
 export const HomeComponent = (): JSX.Element => {
   const [loading, setLoading] = useState<boolean>(true);
@@ -46,8 +49,8 @@ export const HomeComponent = (): JSX.Element => {
   return (
     <div className="relative w-full min-h-screen">
       <button onClick={() => {
-        const { publicRuntimeConfig } = getConfig();
         console.log(publicRuntimeConfig);
+        console.log(process.env.TEST_KEY);
       }}>log public run time config</button>
       <Link href="/search/123">
         <p className="text-blue-900 cursor-pointer">go to a hu hu</p>
