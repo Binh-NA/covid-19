@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import getConfig from 'next/config';
 
 import { Loading } from "../loading";
 import { APIWrapper } from "../../libs/api-wrapper";
@@ -7,6 +8,9 @@ import { ICountry } from "../../types/apis/country.module";
 import * as API from "../../constants/api";
 import { createNotification } from "../notification";
 import { Card } from "./card";
+
+const { publicRuntimeConfig } = getConfig();
+console.log(publicRuntimeConfig);
 
 export const HomeComponent = (): JSX.Element => {
   const [loading, setLoading] = useState<boolean>(true);
