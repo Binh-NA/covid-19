@@ -50,8 +50,10 @@ export const SearchComponent = ({
   return (
     <div className="relative w-full min-h-screen">
       <button onClick={() => {
-        const { publicRuntimeConfig } = getConfig();
-        console.log(publicRuntimeConfig);
+        (async () => {
+          const { publicRuntimeConfig } = getConfig();
+          console.log(publicRuntimeConfig);
+        })();
       }}>log public run time config</button>
       <Link href="/">
         <p className="text-blue-900 cursor-pointer">go to home</p>
