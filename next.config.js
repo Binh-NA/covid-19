@@ -1,8 +1,7 @@
 const nextConfig = {
   poweredByHeader: false,
   publicRuntimeConfig: {
-    // Will be available on both server and client
-    _KEY_: "BING GO",
+    _KEY_: process.env.TEST_KEY, // "BING GO",
   },
   webpack: (config, options) => {
     const nextCssLoaders = config.module.rules.find(
