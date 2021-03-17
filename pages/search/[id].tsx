@@ -15,4 +15,8 @@ const Search = (): JSX.Element => {
   );
 };
 
+export async function getInitialProps() {
+  return {};
+}
+
 export default Search;

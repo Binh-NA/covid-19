@@ -10,7 +10,7 @@ export const Layout = ({
 }): JSX.Element => {
   return (
     <div className="min-h-screen font-Source-Sans-Pro">
-      <NavBar />
+      {/* <NavBar /> */}
 
       <div className={`relative flex w-full ${layoutCss.bodySticky}`}>
         {children}

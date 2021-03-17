@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import getConfig from 'next/config';
+import Link from "next/link";
 
 import { Loading } from "../loading";
 import { APIWrapper } from "../../libs/api-wrapper";
@@ -47,14 +49,21 @@ export const SearchComponent = ({
 
   return (
     <div className="relative w-full min-h-screen">
-      {loading && <Loading.Component />}
+      <button onClick={() => {
+        const { publicRuntimeConfig } = getConfig();
+        console.log(publicRuntimeConfig);
+      }}>log public run time config</button>
+      <Link href="/">
+        <p className="text-blue-900 cursor-pointer">go to home</p>
+      </Link>
+      {/* {loading && <Loading.Component />}
       <div className="grid w-full grid-cols-1 gap-8 p-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         {countries.map((item, i) => (
           <div key={i.toString()}>
             <Card country={item} />
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

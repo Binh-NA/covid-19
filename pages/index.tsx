@@ -12,7 +12,3 @@ const Home = (): JSX.Element => {
 };
 
 export default Home;
-
-export async function getInitialProps() {
-  return {};
-}

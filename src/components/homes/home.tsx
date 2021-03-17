@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import getConfig from 'next/config';
+import Link from "next/link";
 
 import { Loading } from "../loading";
 import { APIWrapper } from "../../libs/api-wrapper";
@@ -47,15 +48,18 @@ export const HomeComponent = (): JSX.Element => {
       <button onClick={() => {
         const { publicRuntimeConfig } = getConfig();
         console.log(publicRuntimeConfig);
-      }}>aaaa</button>
-      {loading && <Loading.Component />}
+      }}>log public run time config</button>
+      <Link href="/search/123">
+        <p className="text-blue-900 cursor-pointer">go to a hu hu</p>
+      </Link>
+      {/* {loading && <Loading.Component />}
       <div className="grid w-full grid-cols-1 gap-8 p-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         {countries.map((item, i) => (
           <div key={i.toString()}>
             <Card country={item} />
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }
